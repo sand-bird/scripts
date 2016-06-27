@@ -7,7 +7,7 @@ def map = [:]
 
 def mapifyXml = { nodelist, container ->
 	nodelist.each {
-		if (it.hasChildNodes()) {
+    if (it.hasChildNodes()) {
 			childMap = false
 			it.getChildNodes().each { if (it.hasChildNodes()) childMap = true }
 			
